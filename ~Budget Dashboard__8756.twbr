@@ -1,0 +1,1385 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='cleaned_statments - cleaned_statments.csv' inline='true' name='federated.11j7oy51avtwn717o2ttl13mq4r7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_statments - cleaned_statments.csv' name='textscan.185oz8g1mhwxt8188h6yt0m2xr7x'>
+            <connection class='textscan' directory='C:/Users/Learner_XZHCG221/Downloads' filename='cleaned_statments - cleaned_statments.csv.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.185oz8g1mhwxt8188h6yt0m2xr7x' name='cleaned_statments - cleaned_statments.csv.csv' table='[cleaned_statments - cleaned_statments.csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Transaction Details' ordinal='0' />
+            <column datatype='real' name='Transaction Amount' ordinal='1' />
+            <column datatype='date' date-parse-format='MM/dd' name='Date' ordinal='2' />
+            <column datatype='string' name='Transaction Type' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.185oz8g1mhwxt8188h6yt0m2xr7x' name='cleaned_statments - cleaned_statments.csv.csv' table='[cleaned_statments - cleaned_statments.csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Transaction Details' ordinal='0' />
+            <column datatype='real' name='Transaction Amount' ordinal='1' />
+            <column datatype='date' date-parse-format='MM/dd' name='Date' ordinal='2' />
+            <column datatype='string' name='Transaction Type' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_statments - cleaned_statments.csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction Details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction Details]</local-name>
+            <parent-name>[cleaned_statments - cleaned_statments.csv.csv]</parent-name>
+            <remote-alias>Transaction Details</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transaction Amount]</local-name>
+            <parent-name>[cleaned_statments - cleaned_statments.csv.csv]</parent-name>
+            <remote-alias>Transaction Amount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[cleaned_statments - cleaned_statments.csv.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction Type]</local-name>
+            <parent-name>[cleaned_statments - cleaned_statments.csv.csv]</parent-name>
+            <remote-alias>Transaction Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='cleaned_statments - cleaned_statments.csv.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164]' role='measure' type='quantitative' />
+      <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Transaction Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bills&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Shopping&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Misc&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Groceries&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cleaned_statments - cleaned_statments.csv.csv' id='cleaned_statments - cleaned_statments.csv.csv_71AB20A745E84F41B9806BD467699164'>
+            <properties context=''>
+              <relation connection='textscan.185oz8g1mhwxt8188h6yt0m2xr7x' name='cleaned_statments - cleaned_statments.csv.csv' table='[cleaned_statments - cleaned_statments.csv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Transaction Details' ordinal='0' />
+                  <column datatype='real' name='Transaction Amount' ordinal='1' />
+                  <column datatype='date' date-parse-format='MM/dd' name='Date' ordinal='2' />
+                  <column datatype='string' name='Transaction Type' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='April'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='4' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+              <size column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Misc&quot;</value>
+                <value>502.20999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Bills&quot;</value>
+                <value>100.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{165F877A-C0FA-4DFC-BE4A-88CD2DFEB82E}' />
+    </worksheet>
+    <worksheet name='August'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='8' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+              <size column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Groceries&quot;</value>
+                <value>456.16999999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shopping&quot;</value>
+                <value>145.88999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{3CEECFDB-D80C-4C43-AC4B-823882415828}' />
+    </worksheet>
+    <worksheet name='Composition of Transaction Types of Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</rows>
+        <cols>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B7286CA0-F312-4EC0-BB7F-90030D75CB0B}' />
+    </worksheet>
+    <worksheet name='February'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='2' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+              <size column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shopping&quot;</value>
+                <value>98.170000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{DEB94E2A-ACB7-475F-84BA-86D924E83C18}' />
+    </worksheet>
+    <worksheet name='March'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='3' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+              <size column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BB234875-2558-4E8B-9777-01980F62E631}' />
+    </worksheet>
+    <worksheet name='September'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='9' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+              <size column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Food &amp; Drink&quot;</value>
+                <value>91.819999999999993</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</field>
+                  <field>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Bills&quot;</value>
+                <value>104.95999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{626E6FF6-B0FC-4DCA-ACF2-A41690C24F1E}' />
+    </worksheet>
+    <worksheet name='Total Transaction Amount by Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[sum:Transaction Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' field-type='quantitative' max='1547.575024317614' min='205.77913415538424' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</rows>
+        <cols>[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]</cols>
+      </table>
+      <simple-id uuid='{EB53102F-06AE-4742-A470-EDE81EF8C75D}' />
+    </worksheet>
+    <worksheet name='Transaction Type Percent for April'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[pcto:sum:Transaction Amount:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='4' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Misc&quot;</bucket>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+              <bucket>&quot;Bills&quot;</bucket>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[pcto:sum:Transaction Amount:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CE49112B-B44A-4CC5-A522-679D887D2CF7}' />
+    </worksheet>
+    <worksheet name='Transaction Type Percent for August'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[pcto:sum:Transaction Amount:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='8' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Groceries&quot;</bucket>
+              <bucket>&quot;Misc&quot;</bucket>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+              <bucket>&quot;Bills&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[pcto:sum:Transaction Amount:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3ECF9C42-95F1-4932-9817-902E06388AD3}' />
+    </worksheet>
+    <worksheet name='Transaction Type Percent for February'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[pcto:sum:Transaction Amount:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='2' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Misc&quot;</bucket>
+              <bucket>&quot;Groceries&quot;</bucket>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[pcto:sum:Transaction Amount:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F899DEB2-E62C-4A53-BDE7-756DCA6F23CF}' />
+    </worksheet>
+    <worksheet name='Transaction Type Percent for March'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[pcto:sum:Transaction Amount:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='3' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Groceries&quot;</bucket>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>&quot;Bills&quot;</bucket>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+              <bucket>&quot;Misc&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[pcto:sum:Transaction Amount:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{345A715E-655A-48F1-9FBD-EB6AF152F2A2}' />
+    </worksheet>
+    <worksheet name='Transaction Type Percent for September'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_statments - cleaned_statments.csv' name='federated.11j7oy51avtwn717o2ttl13mq4r7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11j7oy51avtwn717o2ttl13mq4r7'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Transaction Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Transaction Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Transaction Type]' derivation='None' name='[none:Transaction Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction Amount]' derivation='Sum' name='[pcto:sum:Transaction Amount:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]'>
+            <groupfilter function='member' level='[mn:Date:ok]' member='9' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Shopping&quot;</bucket>
+              <bucket>&quot;Groceries&quot;</bucket>
+              <bucket>&quot;Bills&quot;</bucket>
+              <bucket>&quot;Misc&quot;</bucket>
+              <bucket>&quot;Food &amp; Drink&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.11j7oy51avtwn717o2ttl13mq4r7].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11j7oy51avtwn717o2ttl13mq4r7].[pcto:sum:Transaction Amount:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{13425210-A971-429F-9B67-0CDA501F96DA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Budget Dashboard'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='98222' id='5' type-v2='layout-basic' w='99000' x='500' y='889' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='31556' id='10' name='February' w='19000' x='1250' y='1556' />
+        <zone h='31556' id='11' name='August' w='20125' x='22125' y='778' />
+        <zone h='31556' id='12' name='April' w='20500' x='44375' y='1000' />
+        <zone h='41222' id='17' name='Total Transaction Amount by Month' w='99063' x='313' y='58889' />
+        <zone h='30333' id='18' name='Transaction Type Percent for February' show-title='false' w='17188' x='1250' y='28556' />
+        <zone h='28889' id='19' name='Transaction Type Percent for August' show-title='false' w='18375' x='22938' y='29778' />
+        <zone h='28889' id='20' name='Transaction Type Percent for April' show-title='false' w='18063' x='45625' y='29444' />
+        <zone h='31556' id='21' name='September' w='16875' x='71188' y='778' />
+        <zone h='14111' id='22' name='September' pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type-v2='color' w='8750' x='90875' y='667' />
+        <zone h='29778' id='23' name='Transaction Type Percent for September' show-title='false' w='17625' x='69688' y='28667' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2650' minheight='2650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='28' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='280' h='31556' id='11' is-fixed='true' name='August' w='20125' x='22125' y='778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31556' id='21' is-fixed='true' name='September' w='16875' x='71188' y='778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14111' id='22' name='September' pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type-v2='color' w='8750' x='90875' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31556' id='12' is-fixed='true' name='April' w='20500' x='44375' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31556' id='10' is-fixed='true' name='February' w='19000' x='1250' y='1556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='30333' id='18' is-fixed='true' name='Transaction Type Percent for February' show-title='false' w='17188' x='1125' y='30111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='29778' id='23' is-fixed='true' name='Transaction Type Percent for September' show-title='false' w='17625' x='69688' y='30111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='28889' id='19' is-fixed='true' name='Transaction Type Percent for August' show-title='false' w='18375' x='22938' y='31333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='28889' id='20' is-fixed='true' name='Transaction Type Percent for April' show-title='false' w='18063' x='45688' y='31556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='17' is-fixed='true' name='Total Transaction Amount by Month' w='99063' x='438' y='61778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B424DAFC-07F7-4CEA-82D1-0970702E5040}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Total Transaction Amount by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{996097E6-8F39-4E70-850B-8DDE93CF81CA}' />
+    </window>
+    <window class='worksheet' name='February'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{096D6AB8-4C5F-45A5-8AE9-01628AC3509F}' />
+    </window>
+    <window class='worksheet' name='Transaction Type Percent for February'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BACA54A2-9598-4842-ADED-03B7A9E65C6D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='August'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3429CF89-240F-4C80-A523-33DADC257F43}' />
+    </window>
+    <window class='worksheet' name='Transaction Type Percent for August'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F179491C-918E-4BAF-B940-708F1A43E51E}' />
+    </window>
+    <window class='worksheet' name='April'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{576B0F8D-3CAA-4C30-9565-F86FBE3CFA3E}' />
+    </window>
+    <window class='worksheet' name='Transaction Type Percent for April'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81DDD215-9D53-4BA1-A192-207B968BFFD2}' />
+    </window>
+    <window class='worksheet' name='September'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92727C60-B482-4E94-8857-3C9D8F9AFB12}' />
+    </window>
+    <window class='worksheet' name='Transaction Type Percent for September'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C17D9248-5F4E-4F5E-A3D1-76F88ABB60C3}' />
+    </window>
+    <window class='worksheet' name='March'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[sum:Transaction Amount:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2CBF2E7-3DC9-4E15-A3AE-098578085CDE}' />
+    </window>
+    <window class='worksheet' name='Transaction Type Percent for March'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DFB4543-79FE-45E9-BFC8-EAABF9164392}' />
+    </window>
+    <window class='worksheet' name='Composition of Transaction Types of Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11j7oy51avtwn717o2ttl13mq4r7].[none:Transaction Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3EDCAFB2-DCBC-46D6-A99E-E444FF698FA5}' />
+    </window>
+    <window class='dashboard' name='Budget Dashboard'>
+      <viewpoints>
+        <viewpoint name='April'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='August'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='February'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='September'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Transaction Amount by Month' />
+        <viewpoint name='Transaction Type Percent for April'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Transaction Type Percent for August'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Transaction Type Percent for February'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Transaction Type Percent for September'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{CC700A85-E1B6-4F90-97AC-10194F71831E}' />
+    </window>
+  </windows>
+</workbook>
